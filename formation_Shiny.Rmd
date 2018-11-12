@@ -1,0 +1,64 @@
+---
+title: "Applications Web avec Shiny"
+author: "Philéas Condemine"
+date: "19 novembre 2018"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# 9h30 Introduction : 
+
+## Qu'est-ce que Shiny ?
+
+Shiny permet de développer des sites webs interactifs et réactifs pour mettre en valeur des données ie <i>data-driven </i>.<br>
+Shiny est un package R ie un ensemble de fonctions qui s'apparente à un <i>framework</i> de développement web basé sur le langage R. On peut facilement trouver des tutoriels en français mais la majorité de la documentation, des tutoriels et des échanges sur les forums sont en anglais. 
+- Documentation <a href="https://cran.r-project.org/web/packages/shiny/shiny.pdf">sur le CRAN</a> et sur le site  <a href="https://shiny.rstudio.com/"> Shiny </a>
+- Tutoriel proposé par <a href="https://thinkr.fr/a-decouverte-de-shiny/">thinkR</a>
+- Forums <a href="https://stackoverflow.com/questions/tagged/shiny"> StackOverflow </a>
+
+Mais pour connaître les possibilités offertes par Shiny, le mieux est de jeter un oeil à la <a href="https://shiny.rstudio.com/gallery/">gallerie</a>.
+
+
+## Les packages R associés
+
+Pour créer une application Shiny il suffit d'utiliser le package éponyme, mais d'autre packages viennent enrichir les fonctionnalités de Shiny. En particulier, Shiny s'appuie sur le framework web <a href="https://getbootstrap.com/">Bootstrap</a>.
+
+- <a href="https://drees.shinyapps.io/cartographie_des_indicateurs">shinydashboard</a> : pour générer des applications sous forme de dashboard
+- <a href="https://ebailey78.github.io/shinyBS/docs/Tooltips_and_Popovers.html">shinyBS</a> : quelques fonctionnalités pour intégrer des éléments de documentation interactifs
+- shinyWidgets : pour un meilleur contrôle des boutons d'interaction avec l'utilisateur
+- shinycssloaders : une façon d'ajouter une barre de progression pendant les chargements
+- shinyjs : pour ajouter du code javascript dans son application
+- shinythemes : quelques feuilles de style pour personnaliser son application Shiny (la feuille de style DREES existe mais elle n'est pas dans ce package)
+
+D'autres idées <a href="http://enhancedatascience.com/2017/07/10/the-packages-you-need-for-your-r-shiny-application/">ici</a>
+
+
+## découpage en 3 parties UI/Server/global
+## bonnes pratiques cf page gitlab
+	
+## 10h45 Pause	
+# 11h coder une application hello-world
+
+# 14h UI.R dans le détail : 
+	- Inputs, 
+	- Responsive , 
+	- Inspecteur d'élément
+	- Les basics d'html : div, h1,h2,p, les classes, les id, a/href
+	- CSS pour modifier le style (position, police, couleur, transparence…)
+	- => ajouter des boutons dans mon appli hello world
+
+## 15h15 Pause
+
+# 15h30 Server.R dans le détail : 
+	- observeEvent, 
+	- reactive… 
+	- Utiliser les inputs pour rendre l'appli interactive
+	- Pistes d'approfondissement : intégrer les inputs DT et leaflet pour récupérer les clics et réagir à l'action de l'utilisateur
+
+# 17h conclusion et ouverture sur 
+	- shinyapps.io, 
+	- profvis pour comprendre les lenteurs, 
+	- accompagnement en atelier projet
+
