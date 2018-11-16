@@ -42,7 +42,7 @@ Par ailleurs vous connaissez déjà des applications Shiny, celles développées
 ## Les packages R associés
 
 Commençons par jeter un oeil à la liste des fonctions du package shiny en allant dans l'onglet `Packages` de la sous-fenêtre située en bas à droite de RStudio, en cherchant shiny et en cliquant sur l'hyperlien. 
-<img src="search_package_shiny.PNG"/>
+<img src="www/search_package_shiny.PNG"/>
 
 Pour créer une application Shiny il suffit d'utiliser le package éponyme, mais d'autre packages viennent enrichir les fonctionnalités de Shiny. En particulier, Shiny s'appuie sur le framework web <a href="https://getbootstrap.com/">Bootstrap</a>.
 
@@ -141,7 +141,7 @@ shinyApp(ui, server = function(input, output) { })
 - sélectionner "inspecter"
 - Une demi-fenêtre s'affiche à droite, par défaut l'onglet "Elements" est affiché, il représente la page HTML actuellement chargée dans le navigateur.
 
-<img src="open_inspector.PNG"/>
+<img src="www/open_inspector.PNG"/>
 
 ## [Digression 2/3] Les basics d'html : div, h1,h2,p, les classes, les id, a/href
 
@@ -195,7 +195,7 @@ runApp(app)
 
 Dans l'explorateur d'élément, une sous-fenêtre est minimisée en bas, vous pouvez l'agrandir pour accéder à d'autres fonctionnalités comme le style de la page.
 
-<img src="open_style_section.png"/>
+<img src="www/open_style_section.png"/>
 
 - sélectionner le titre `visualisation des données de la DREES`
 - modifier la couleur en ajustant l'attribut `color`. Attention les lignes barrées sont des attributs qui ont été écrasés par d'autres qui étaient plus prioritaires.
